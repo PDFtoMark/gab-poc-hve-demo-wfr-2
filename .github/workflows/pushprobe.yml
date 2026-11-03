@@ -1,0 +1,11 @@
+name: Push Probe Public Fork
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo public fork push probe
